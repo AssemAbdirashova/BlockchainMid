@@ -1,0 +1,25 @@
+<label >Your delivery status</label>
+
+<!--<div *ngIf="delivery">-->
+<!--  <h2>{{delivery.status_id}}</h2>-->
+<!--</div>-->
+<br>
+<td
+  *ngIf="delivery.status_id===3"
+  class="font-size-md">
+  delivered
+</td>
+
+<td
+  *ngIf="delivery.status_id === 2"
+  class="font-size-md">
+  on the way
+</td>
+
+<td
+  *ngIf="delivery.status_id === 1"
+  class="font-size-md">
+  on the complete set
+</td>
+<br>
+<button (click)="getDeliveryStatus()">get updated status</button>

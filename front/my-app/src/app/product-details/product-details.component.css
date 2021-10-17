@@ -1,0 +1,81 @@
+img{
+  margin-top: 20px;
+}
+
+.product{
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+
+.share{
+  text-decoration: none;
+  color: #FFA07A;
+  display: block;
+}
+
+button {
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.gallery {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #FFA07A;
+  border-radius: 3px;
+}
+.header{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left:40px;
+  padding-top:20px;
+}
+img {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+
+.g{
+  text-decoration: none;
+  padding-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rate{
+  text-decoration: none;
+  color:white;
+}
+.row{
+  text-decoration: none;
+  background-image: url(https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg);
+}
+
+.value{
+  text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+}
+
+.info{
+  text-decoration: none;
+  margin-left:30px;
+  margin-bottom:30px;
+  border:1px solid red;
+  background-color: red;
+  padding:10px 20px;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color:black;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: rgb(102, 38, 38);
+}
+
+.info:hover{
+  text-decoration: none;
+ background-color: rgb(219, 43, 16);
+}

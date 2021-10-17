@@ -1,0 +1,94 @@
+
+
+h1 {
+  color: #61677C;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  border-radius: 320px;
+  padding: 15px 20px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 white;
+}
+
+input {
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+
+button {
+  color: #61677C;
+  box-shadow: -5px -5px 20px white, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px white, 2px 2px 5px #BABECC;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+p {
+  font-family: Lato;
+  text-decoration: none;
+  margin-left: 150px;
+}
+
+a{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-decoration: none;
+  width: 100px;
+
+}
+
+.container{
+
+  background-color:#FFD700;
+}
+
+
+
+/* AppComponent's private CSS styles */
+h1 {
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+  text-decoration: none;
+}
+nav a {
+
+  padding: 5px 10px;
+  text-decoration: none;
+
+  display: inline-block;
+  background-color:#FF4500;
+  border-radius: 40px;
+}
+nav a:visited, a:link {
+  color: white;
+}
+nav a:hover {
+  color: white;
+  background-color: #FF4500;
+}
+nav a.active {
+  color: #FF4500;
+}

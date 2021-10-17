@@ -1,0 +1,40 @@
+<div *ngIf="product">
+  <div class = "column">
+          <h3 class = "header">
+            <a href="{{product.link}}" target="_blank">
+              {{ product.name | uppercase}}
+            </a>
+          </h3>
+          <img id="main" src="{{ product.image }}" width = "450px">
+        <div class = g>
+        <p>
+          {{ product.description }}
+        </p>
+        <h4><span class = "value"> {{ product.price }} </span><br> <span class = "rate">rating: {{ product.rating }} </span></h4>
+        </div>
+      </div>
+    <div class="column">
+     <!-- <button (click)="Share()" class = "info"> More information </button> -->
+    </div>
+  <!-- <img src="{{product.image}}" alt="product" class="product">
+
+  <h3>
+    <a href="{{product.link}}" target="_blank">
+      {{ product.name | uppercase}}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  <div class="data">
+    <h3> US ${{product.price}}</h3>
+    <h4 *ngIf="product.rating">
+      <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="star" style="width: 20px">  {{product.rating}}</h4>
+  </div>
+
+  <button>
+    <a href="https://telegram.me/share/url?url={{product.link}}&text=Look what I found in AliExpress" target="_blank" class="share">Share in Telegram</a>
+  </button>
+
+</div> -->

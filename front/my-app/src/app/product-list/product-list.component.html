@@ -1,0 +1,43 @@
+<head>
+  <div *ngFor="let product of products" >
+    <a routerLink="/products/{{product.id}}">
+      <h3 class = "header">
+        <a href="{{product.link}}" target="_blank">
+          {{ product.name | uppercase}}
+        </a>
+      </h3>
+      <img id="main" src="{{ product.image }}" width = "450px">
+    </a>
+  </div>
+    </head>
+<body>
+
+<div class="flex">
+
+  <div *ngFor="let product of products" class="products">
+    <a routerLink="/products/{{product.id}}">
+
+      <img src="{{product.image}}" >
+
+      <h3>
+        <a href="{{product.link}}" target="_blank">
+          {{ product.name }}
+        </a>
+      </h3>
+
+      <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+      <hr>
+      <div class="data">
+        <h3> US ${{product.price}}</h3>
+        <h4 *ngIf="product.rating"><img src="https://img.icons8.com/color/48/000000/filled-star.png" class="star">  {{product.rating}}</h4>
+      </div>
+    </a>
+    <button>
+      <a href="https://telegram.me/share/url?url={{product.link}}&text=Look what I found in AliExpress" target="_blank" class="share" (click)="share()">Share in Telegram</a>
+    </button>
+
+    </div>
+  </div>
+</body>

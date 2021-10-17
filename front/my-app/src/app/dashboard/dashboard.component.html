@@ -1,0 +1,73 @@
+<div >
+  <!--    <label class="name">Category name:-->
+  <!--      <p>Username<input type="text"  [(ngModel)]="name"></p>-->
+  <!--    </label>-->
+  <!--  <button (click) = "add()" >add</button>-->
+
+</div>
+<!--<ul class="col">-->
+<!--  <label >Choose a coffee:</label>-->
+<!--  <select id="cars" name="cars" >-->
+<!--&lt;!&ndash;    <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;      <a routerLink="/category/{{category.id}}/products">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h4 class="module"></h4>&ndash;&gt;-->
+<!--      <option value="audi" *ngFor="let category of categories?.category">-->
+<!--        {{category?.id}}-->
+<!--      </option>-->
+<!--      &lt;!&ndash;      </a>&ndash;&gt;-->
+<!--      &lt;!&ndash;    <button class="delete" title="delete category"&ndash;&gt;-->
+<!--      &lt;!&ndash;            (click)="delete(category)">x</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+<!--     </select>-->
+<!--</ul>-->
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+<p>
+  <label >Choose a coffee:</label>
+  <select #selectedValue name="selectedValue"
+          id="selectedValue" [(ngModel)]="categories.category" class="col-md-12 form-control-sm">
+    <option *ngFor="let employment of categories?.category"
+            [ngValue]="employment" [selected]="employment">
+      {{employment.name}}
+    </option>
+  </select>
+</p>
+  <p>
+    <label>Package weight(kg):</label><br>
+    <input type="number" id="lname" name="lname">
+  </p>
+  <h4> Delivery</h4>
+  <label>Date of shipment:</label><br>
+  <input type="date" name="date">
+  <p>
+    <label>Date of delivery:</label><br>
+    <input type="date" name="date">
+
+  </p>
+
+</form>
+<form>
+  <h4> Address</h4>
+  <p>
+    <label>Country:</label><br>
+    <input [(ngModel)]="address.country" type="text" name="country"/>
+    <p>
+  <p>
+  <label>City:</label><br>
+    <input type="text" name="city" [(ngModel)]="address.city">
+    </p>
+  <p>
+    <label>Street:</label><br>
+    <input type="text" name="address_id"[(ngModel)]="address.street">
+  </p>
+  <p>
+  <label>House_num:</label><br>
+    <input type="number" name="address_id" [(ngModel)]="address.house">
+  </p>
+</form>
+<button (click) = "add()" >
+  <a routerLink="/category">Send request</a>
+</button>
+
